@@ -8,7 +8,7 @@
 ## Cypress in short :
 **Cypress is a JavaScript-based open-source end-to-end testing framework for web applications. It offers web engineers a quick, dependable, and simple testing solution for writing automated tests that mimic user actions and interactions with the application. Cypress is built to operate in the browser and supports real-time debugging and code modification, making it simple to find and resolve bugs in your application. Cypress also includes a robust API that supports complicated test scenarios and connects with other tools like CI/CD pipelines and continuous testing platforms. It is frequently used in the web development community to assure web application quality and functionality.**
 
-### Important : From this point all the instructions and commands are supposed to be execute in sauceDemo folder
+### Important : From this point all the instructions and commands given below are supposed to be execute in sauceDemo folder
 ### Setting up repository with all the dependencies and installations :
 1.	Clone the repository in local storage
 2.	Open the repository in IDE.
