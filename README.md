@@ -202,8 +202,10 @@ We have setup a basic CI. You can access it from actions tab.
 As we have verifyBurgerMenu.js test suite includes one failing test , after running the build , build will return failed status as the run tests step fails.
 To demonstrate this , I have provided two build runs :
 
-### Build with Passed state : In this I have disabled the failing test to get passed build
+### Build with Passed state : In this I have disabled the failing test before running the CI to get passed build
 ### Build with Failed state : In this the failing test is enabled and running.
+
+
 
 
 
