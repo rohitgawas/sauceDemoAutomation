@@ -67,7 +67,7 @@ describe("Test suite to Verify burger menu functionality", function () {
     //Verify that user navigates to loginpage :
     cy.get("#login-button").should("be.visible");
   });
-  it.skip("Verify About link works fine", function () {
+  it("Verify About link works fine", function () {
     //Open burger menu from product page :
     openBurgerMenu(this.burgerMenuData.burgerMenu);
 
