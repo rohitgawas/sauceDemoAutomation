@@ -13,13 +13,10 @@ jobs:
     steps:
     - name: Checkout repo
       uses: actions/checkout@v2
-    - name: uses Node.js
-      uses: actions/setup-node@v1
-      with:
-        node-version: "20.x"
     - name: Install dependancies
       working-directory: ./sauceDemo
       run: npm install
     - name: run tests
       working-directory: ./sauceDemo
       run: npx cypress run --headless
+
