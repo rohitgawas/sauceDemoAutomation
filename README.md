@@ -192,13 +192,21 @@ This will run the tests in headed mode in browser and will store the html report
 ## Running tests in CI:
 
 We have setup a basic CI. You can access it from actions tab.
-
 1. Go to Actions tab of github repository
 2. From all workflows > Select workflow **"sauceDemo CI"**
 3. Open dropdown for **Run Workflow** > Click on RUn Workflow
+   This will setup the repository , then install all dependancies and finally will run tests in headless mode.
+
+## Import note on CI build results : 
+As we have verifyBurgerMenu.js test suite includes one failing test , after running the build , build will return failed status as the run tests step fails.
+To demonstrate this , I have provided two build runs :
+
+### Build with Passed state : In this I have disabled the failing test to get passed build
+### Build with Failed state : I this failing test is enabled and running.
 
 
-This will setup the repository , then install all dependancies and finally will run tests in headless mode.
+
+
 
 
 
