@@ -189,3 +189,17 @@ This will run the tests in headed mode in browser and will store the html report
 1.	In testsuite :verifyBurgerMenu.js , test : “ About link works fine” is failing because page is taking too much time to load. But I have kept it as it is to fail so that when report get generated , we can see detailing of failed test in test report.
 
 
+## Running tests in CI:
+
+We have setup a basic CI. You can access it from actions tab.
+
+1. Go to Actions tab of github repository
+2. From all workflows > Select workflow **"sauceDemo CI"**
+3. Open dropdown for **Run Workflow** > Click on RUn Workflow
+
+
+This will setup the repository , then install all dependancies and finally will run tests in headless mode.
+
+
+
+
