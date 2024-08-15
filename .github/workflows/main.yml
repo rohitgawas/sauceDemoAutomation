@@ -1,0 +1,24 @@
+name: sauceDemo CI
+on: 
+  workflow_dispatch:
+  push:
+    branches: 
+      -main
+  pull_request:
+    branches:
+      -main
+jobs: 
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v2
+    - name: uses Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: "20.x"
+    - name: install dependancies
+      run: npm install
+    - name: run tests
+      working-directory: ./sauceDemo
+      run: npx cypress run --headless
