@@ -18,5 +18,5 @@ jobs:
       run: npm install
     - name: run tests
       working-directory: ./sauceDemo
-      run: npx cypress run --headless
+      run: node_modules/.bin/cypress run --headless
 
