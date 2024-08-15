@@ -3,6 +3,7 @@
 ## Programming language used : JAVASCRIPT
 ## Automation tool used : CYPRESS
 ## Design pattern used : POM (Page Object Model)
+## Website used : [https://www.saucedemo.com/]
 ## Reporting tool used : MOCHAWESOME
 
 ## Cypress in short :
