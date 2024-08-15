@@ -194,7 +194,7 @@ This will run the tests in headed mode in browser and will store the html report
 We have setup a basic CI. You can access it from actions tab.
 1. Go to Actions tab of github repository
 2. From all workflows > Select workflow **"sauceDemo CI"**
-3. Open dropdown for **Run Workflow** > Click on RUn Workflow
+3. Open dropdown for **Run Workflow** > Click on Run Workflow
    This will setup the repository , then install all dependancies and finally will run tests in headless mode.
 
 ## Import note on CI build results : 
