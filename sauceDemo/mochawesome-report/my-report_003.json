@@ -1,0 +1,144 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-08-15T12:31:27.863Z",
+    "end": "2024-08-15T12:31:33.865Z",
+    "duration": 6002,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f76e0db2-aece-40b0-897c-e0dc03121f17",
+      "title": "",
+      "fullFile": "cypress\\e2e\\tests\\verifyProductPage.js",
+      "file": "cypress\\e2e\\tests\\verifyProductPage.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "558ccb77-3f21-4100-a485-f0cf0ead6334",
+          "title": "Test suite to Verify Product page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify UI elements are present on the page",
+              "fullTitle": "Test suite to Verify Product page Verify UI elements are present on the page",
+              "timedOut": null,
+              "duration": 1616,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Verify product page header :\n(0, _productPage.isProductPageHeaderPresent)(this.productPageData.productPageHeaderText);\n//verify kart icon is present :\n(0, _productPage.isProductCartIconPresent)(this.productPageData.shoppingCartContainer);\n//Verify burger menu is present :\n(0, _productPage.isBurgerMenuIconPresent)(this.productPageData.burgerMenu);\n//Verify sort icon is present :\n(0, _productPage.isSortIconPresent)(this.productPageData.productSortButton);\n//Verify product cards are presents :\n(0, _productPage.isProductCardsPresent)(this.productPageData.invenory_item_cards);\n//Verify pricing is displayed for the visible product cards :\n(0, _productPage.isProductPricePresent)(this.productPageData.inventory_item_price);\n//Verify Add to cart button is displayed for the visible products :\n(0, _productPage.isAddToCartButtonPresent)(this.productPageData.addToCartButtons);\n//Verify product images are visible :\n(0, _productPage.isProductImagesPresent)(this.productPageData.productImage);\n//Verify product page title is visible :\n(0, _productPage.isProductTitlePresent)(this.productPageData.productPageTitle);\n//Verify social media links :\n(0, _productPage.isSocialMediaLinksPresent)(this.productPageData.socialMediaLinks);",
+              "err": {},
+              "uuid": "d920c93a-b726-4ad0-8d4c-fb4a63c0e09e",
+              "parentUUID": "558ccb77-3f21-4100-a485-f0cf0ead6334",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Add products to cart",
+              "fullTitle": "Test suite to Verify Product page Add products to cart",
+              "timedOut": null,
+              "duration": 1325,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Make sure that shopping cart is empty :\ncy.get(this.productPageData.shoppingCartBadge).should(\"not.exist\");\n//---------Call function to add products to cart------------\n//Add Sauce Labs Fleece Jacket :\n(0, _productPage.addProductToCart)(this.productPageData.addToCartButtonForEachProduct.Sauce_labs_Fleece_Jacket);\n//Verify change in the state of product after adding to cart :\n(0, _productPage.stateChangedToRemove)(this.productPageData.addToCartChangedToRemove.Sauce_labs_Fleece_Jacket);\n//Verify that shopping cart batch is updated :\n(0, _productPage.checkValueOnShoppingCartBatch)(this.productPageData.shoppingCartBadge, 1);\n//Add Sauce Labs Bolt T-Shirt\n(0, _productPage.addProductToCart)(this.productPageData.addToCartButtonForEachProduct.Sauce_Labs_Bolt_Tshirt);\n//Verify change in the state of product after adding to cart :\n(0, _productPage.stateChangedToRemove)(this.productPageData.addToCartChangedToRemove.Sauce_Labs_Bolt_Tshirt);\n//Verify that shopping cart batch is updated :\n(0, _productPage.checkValueOnShoppingCartBatch)(this.productPageData.shoppingCartBadge, 2);\n//Add Sauce Labs Backpack :\n(0, _productPage.addProductToCart)(this.productPageData.addToCartButtonForEachProduct.Sauce_Labs_Backpack);\n//Verify change in the state of product after adding to cart :\n(0, _productPage.stateChangedToRemove)(this.productPageData.addToCartChangedToRemove.Sauce_Labs_Backpack);\n//Verify that shopping cart batch is updated :\n(0, _productPage.checkValueOnShoppingCartBatch)(this.productPageData.shoppingCartBadge, 3);",
+              "err": {},
+              "uuid": "77189f8b-f21c-44f2-bf00-2522435f3ff8",
+              "parentUUID": "558ccb77-3f21-4100-a485-f0cf0ead6334",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify user can remove the products from cart from products page",
+              "fullTitle": "Test suite to Verify Product page Verify user can remove the products from cart from products page",
+              "timedOut": null,
+              "duration": 1591,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//--------Setup cart with some products added to it--------------\n//Add products to cart :\n(0, _productPage.addProductToCart)(this.productPageData.addToCartButtonForEachProduct.Sauce_labs_Fleece_Jacket);\n(0, _productPage.addProductToCart)(this.productPageData.addToCartButtonForEachProduct.Sauce_Labs_Backpack);\n(0, _productPage.addProductToCart)(this.productPageData.addToCartButtonForEachProduct.Sauce_Labs_Bolt_Tshirt);\n//-----------Verify that user can remove the products from cart using remove button---------------\n//Remove Sauce Labs Fleece Jacket :\n(0, _productPage.clickRemoveButton)(this.productPageData.addToCartChangedToRemove.Sauce_labs_Fleece_Jacket);\n//Verify change in the state of product after adding to cart :\n(0, _productPage.stateChangedToAddToCart)(this.productPageData.addToCartButtonForEachProduct.Sauce_labs_Fleece_Jacket);\n//Verify that shopping cart batch is updated :\n(0, _productPage.checkValueOnShoppingCartBatch)(this.productPageData.shoppingCartBadge, 2);\n//Add Sauce Labs Bolt T-Shirt\n(0, _productPage.clickRemoveButton)(this.productPageData.addToCartChangedToRemove.Sauce_Labs_Bolt_Tshirt);\n//Verify change in the state of product after adding to cart :\n(0, _productPage.stateChangedToAddToCart)(this.productPageData.addToCartButtonForEachProduct.Sauce_Labs_Bolt_Tshirt);\n//Verify that shopping cart batch is updated :\n(0, _productPage.checkValueOnShoppingCartBatch)(this.productPageData.shoppingCartBadge, 1);\n//Add Sauce Labs Backpack :\n(0, _productPage.clickRemoveButton)(this.productPageData.addToCartChangedToRemove.Sauce_Labs_Backpack);\n//Verify change in the state of product after adding to cart :\n(0, _productPage.stateChangedToAddToCart)(this.productPageData.addToCartButtonForEachProduct.Sauce_Labs_Backpack);\n//Verify that shopping cart badge is not present as cart has zero items :\ncy.get(this.productPageData.shoppingCartBadge).should(\"not.exist\");",
+              "err": {},
+              "uuid": "d7fc9ed6-2a3a-493f-a0ef-672f160abcaa",
+              "parentUUID": "558ccb77-3f21-4100-a485-f0cf0ead6334",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d920c93a-b726-4ad0-8d4c-fb4a63c0e09e",
+            "77189f8b-f21c-44f2-bf00-2522435f3ff8",
+            "d7fc9ed6-2a3a-493f-a0ef-672f160abcaa"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4532,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "my-report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "json": true,
+        "reportsDir": "reports/your-reports-folder",
+        "reportFilename": "my-report",
+        "overwrite": false
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 3,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-08-15T12:29:43.349Z",
+    "end": "2024-08-15T12:30:55.684Z",
+    "duration": 72335,
+    "testsRegistered": 4,
+    "passPercent": 75,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "01c09ec1-96cf-4c3c-a116-8195642388d2",
+      "title": "",
+      "fullFile": "cypress\\e2e\\tests\\verifyBurgerMenu.js",
+      "file": "cypress\\e2e\\tests\\verifyBurgerMenu.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "560ca090-d5e1-45d8-83f0-4cc4907f67b0",
+          "title": "Test suite to Verify burger menu functionality",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify UI elements of burger menu are visible",
+              "fullTitle": "Test suite to Verify burger menu functionality Verify UI elements of burger menu are visible",
+              "timedOut": null,
+              "duration": 3281,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Open burger menu from product page :\n(0, _burgerMenu.openBurgerMenu)(this.burgerMenuData.burgerMenu);\n// Verify link for All items is present:\n(0, _burgerMenu.isAllItemsLinkPresent)(this.burgerMenuData.allItemsLink);\n// Verify link to access About page is present:\n(0, _burgerMenu.isAboutLinkPresent)(this.burgerMenuData.aboutLink);\n// Verify Link to Logout is present :\n(0, _burgerMenu.isLogOutLinkPresent)(this.burgerMenuData.logOutLink);\n//Verify Link to reset all state is present:\n(0, _burgerMenu.isResetAllStateLinkPresent)(this.burgerMenuData.resetAllState);",
+              "err": {},
+              "uuid": "07d0de32-9503-4e5c-bab5-cec2ef7e88e6",
+              "parentUUID": "560ca090-d5e1-45d8-83f0-4cc4907f67b0",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify All items link works fine",
+              "fullTitle": "Test suite to Verify burger menu functionality Verify All items link works fine",
+              "timedOut": null,
+              "duration": 1871,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Open burger menu from product page :\n(0, _burgerMenu.openBurgerMenu)(this.burgerMenuData.burgerMenu);\n//Click on All items link :\n(0, _burgerMenu.clickAllItemsLink)(this.burgerMenuData.allItemsLink);\n//Verify that products page is displayed :\n//Verify product page title is visible :\n(0, _productPage.isProductTitlePresent)(this.burgerMenuData.productPageTitle);",
+              "err": {},
+              "uuid": "27c90362-8351-400f-8faa-c49639cc50ac",
+              "parentUUID": "560ca090-d5e1-45d8-83f0-4cc4907f67b0",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify logOut works fine",
+              "fullTitle": "Test suite to Verify burger menu functionality Verify logOut works fine",
+              "timedOut": null,
+              "duration": 1889,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Open burger menu from product page :\n(0, _burgerMenu.openBurgerMenu)(this.burgerMenuData.burgerMenu);\n//Click on Logout link :\n(0, _burgerMenu.clickLogOutLink)(this.burgerMenuData.logOutLink);\n//Verify that user navigates to loginpage :\ncy.get(\"#login-button\").should(\"be.visible\");",
+              "err": {},
+              "uuid": "1b603369-d2d1-47fd-a3af-f34e36c86c85",
+              "parentUUID": "560ca090-d5e1-45d8-83f0-4cc4907f67b0",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify About link works fine",
+              "fullTitle": "Test suite to Verify burger menu functionality Verify About link works fine",
+              "timedOut": null,
+              "duration": 61901,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "//Open burger menu from product page :\n(0, _burgerMenu.openBurgerMenu)(this.burgerMenuData.burgerMenu);\n//Click on All items link :\n(0, _burgerMenu.clickAboutLink)(this.burgerMenuData.aboutLink);\n//Verify that user navigates to saucelabs homepage is displayed :\n//THis check will fail to demonstrate how the reporting will show failed test:\ncy.url().should(\"have.text\", \"\");",
+              "err": {
+                "message": "CypressError: Timed out after waiting `60000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `60000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.config.js` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.",
+                "estack": "CypressError: Timed out after waiting `60000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `60000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.config.js` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n    at timedOutWaitingForPageLoad (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:146720:72)\n    at <unknown> (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:147018:16)\n    at tryCatcher (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:18744:23)\n    at <unknown> (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:13866:41)\n    at tryCatcher (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:18744:23)\n    at Promise._settlePromiseFromHandler (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:16679:31)\n    at Promise._settlePromise (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:16736:18)\n    at Promise._settlePromise0 (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:16781:10)\n    at Promise._settlePromises (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:16857:18)\n    at _drainQueueStep (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:13451:12)\n    at _drainQueue (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:13444:9)\n    at ../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:13460:5)\n    at Async.drainQueues (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:13330:14)\nFrom Your Spec Code:\n    at Context.eval (webpack:///./cypress/e2e/tests/verifyBurgerMenu.js:79:7)",
+                "diff": null
+              },
+              "uuid": "9226c293-4442-4dcc-8dc7-ab761d947f30",
+              "parentUUID": "560ca090-d5e1-45d8-83f0-4cc4907f67b0",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "07d0de32-9503-4e5c-bab5-cec2ef7e88e6",
+            "27c90362-8351-400f-8faa-c49639cc50ac",
+            "1b603369-d2d1-47fd-a3af-f34e36c86c85"
+          ],
+          "failures": [
+            "9226c293-4442-4dcc-8dc7-ab761d947f30"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 68942,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "my-report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "json": true,
+        "reportsDir": "reports/your-reports-folder",
+        "reportFilename": "my-report",
+        "overwrite": false
+      },
+      "version": "6.2.0"
+    }
+  }
+}

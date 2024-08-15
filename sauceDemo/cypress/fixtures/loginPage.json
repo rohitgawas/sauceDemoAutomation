@@ -1,0 +1,10 @@
+{
+  "pageHeader": "Swag Labs",
+  "userName": "#user-name",
+  "passWord": "#password",
+  "loginButton": "#login-button",
+  "invalidUserName": "testInvalidUser",
+  "invalidUserPassWord": "testInvalidPassword",
+  "errorCard": "[data-test='error']",
+  "inValidUserError": "Epic sadface: Username and password do not match any user in this service"
+}

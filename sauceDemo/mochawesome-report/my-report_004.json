@@ -1,0 +1,144 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-08-15T12:31:37.532Z",
+    "end": "2024-08-15T12:31:43.367Z",
+    "duration": 5835,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "3151a9d2-b7d4-4dc2-9ed7-072ccd716edb",
+      "title": "",
+      "fullFile": "cypress\\e2e\\tests\\verifyShoppingCartPage.js",
+      "file": "cypress\\e2e\\tests\\verifyShoppingCartPage.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "eec0fcd3-30c8-4870-9574-115a16ab6ac6",
+          "title": "Test suite to Verify shopping cart page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify UI elements of the shopping cart page",
+              "fullTitle": "Test suite to Verify shopping cart page Verify UI elements of the shopping cart page",
+              "timedOut": null,
+              "duration": 1342,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Navigate to the shopping cart page :\n(0, _shoppingCartPage.navigateToShoppingCart)();\n//Verify header text is visible :\n(0, _shoppingCartPage.isShoppingCartHeaderTextPresent)(this.shoppingCartPageData.shoppingCartPagePageHeaderText);\n//Verify shopping cart title is visible :\n(0, _shoppingCartPage.isShoppingCartTitlePresent)(this.shoppingCartPageData.shoppingCartPageTitle);\n//Verify burger menu is visible in shopping cart page :\n(0, _shoppingCartPage.isBurgerMenuPresent)(this.shoppingCartPageData.burgerMenu);\n//Verify cart quantity label is present :\n(0, _shoppingCartPage.isCartQuantityLabelPresent)(this.shoppingCartPageData.cartQuantityLabel);\n//Verify cart description label is present :\n(0, _shoppingCartPage.isCartDescriptionLabelPresent)(this.shoppingCartPageData.cartDescriptionLabel);\n//Verify continue shopping button is present :\n(0, _shoppingCartPage.isContinueShoppingButtonPresent)(this.shoppingCartPageData.continueShoppingButton);\n//Verify checkout button is present :\n(0, _shoppingCartPage.isCheckOutButtonPresent)(this.shoppingCartPageData.checkOutButton);\n//Verify social media links :\n(0, _shoppingCartPage.isSocialMediaLinksPresent)(this.shoppingCartPageData.socialMediaLinks);",
+              "err": {},
+              "uuid": "26688c82-bf1a-4aba-9759-ce21fdf9383c",
+              "parentUUID": "eec0fcd3-30c8-4870-9574-115a16ab6ac6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify items get listed in checkout page after adding products to cart",
+              "fullTitle": "Test suite to Verify shopping cart page Verify items get listed in checkout page after adding products to cart",
+              "timedOut": null,
+              "duration": 1552,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//--------Setup cart with some products added to it--------------\n//Add products to cart :\n(0, _shoppingCartPage.addProductToCart)(this.shoppingCartPageData.addToCartButtonForEachProduct.Sauce_labs_Fleece_Jacket);\n(0, _shoppingCartPage.addProductToCart)(this.shoppingCartPageData.addToCartButtonForEachProduct.Sauce_Labs_Backpack);\n(0, _shoppingCartPage.addProductToCart)(this.shoppingCartPageData.addToCartButtonForEachProduct.Sauce_Labs_Bolt_Tshirt);\n//-----------Verify cart page is updated with added items-----------\n//Navigate to the shopping cart page :\n(0, _shoppingCartPage.navigateToShoppingCart)();\n//Verify that products are listed in cart with correct data :\n//verifyProductInCart()takes three parameters : productName, productPrice, productQuanity\n(0, _shoppingCartPage.verifyProductInCart)(this.shoppingCartPageData.checkProductsInCart.SauceLabsBackpack.name, this.shoppingCartPageData.checkProductsInCart.SauceLabsBackpack.price, 1);\n(0, _shoppingCartPage.verifyProductInCart)(this.shoppingCartPageData.checkProductsInCart.SauceLabsFleeceJacket.name, this.shoppingCartPageData.checkProductsInCart.SauceLabsFleeceJacket.price, 1);\n(0, _shoppingCartPage.verifyProductInCart)(this.shoppingCartPageData.checkProductsInCart.SauceLabsBoltTShirt.name, this.shoppingCartPageData.checkProductsInCart.SauceLabsBoltTShirt.price, 1);",
+              "err": {},
+              "uuid": "ef13593d-77fc-46eb-96f8-2e4cff6ff837",
+              "parentUUID": "eec0fcd3-30c8-4870-9574-115a16ab6ac6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify that user can remove the products from cart using remove button on shopping cart page ",
+              "fullTitle": "Test suite to Verify shopping cart page Verify that user can remove the products from cart using remove button on shopping cart page ",
+              "timedOut": null,
+              "duration": 1464,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//--------Setup cart with some products added to it--------------\n//Add products to cart :\n(0, _shoppingCartPage.addProductToCart)(this.shoppingCartPageData.addToCartButtonForEachProduct.Sauce_labs_Fleece_Jacket);\n(0, _shoppingCartPage.addProductToCart)(this.shoppingCartPageData.addToCartButtonForEachProduct.Sauce_Labs_Backpack);\n(0, _shoppingCartPage.addProductToCart)(this.shoppingCartPageData.addToCartButtonForEachProduct.Sauce_Labs_Bolt_Tshirt);\n//---------Check removal of the products using remove button in shopping cart page--------------------\n//Navigate to the shopping cart page :\n(0, _shoppingCartPage.navigateToShoppingCart)();\n//Click on remove button on one of the product and check if it is removed :\n//removePRoductFromCart() function takes two parameters :productName, ID of the remove button\n(0, _shoppingCartPage.removePRoductFromCart)(this.shoppingCartPageData.checkProductsInCart.SauceLabsFleeceJacket.name, this.shoppingCartPageData.removeButton.forSauceLabsFleeceJacket);",
+              "err": {},
+              "uuid": "c0f4d5c0-3062-4f77-a5f6-e696ad04e976",
+              "parentUUID": "eec0fcd3-30c8-4870-9574-115a16ab6ac6",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "26688c82-bf1a-4aba-9759-ce21fdf9383c",
+            "ef13593d-77fc-46eb-96f8-2e4cff6ff837",
+            "c0f4d5c0-3062-4f77-a5f6-e696ad04e976"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4358,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "my-report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "json": true,
+        "reportsDir": "reports/your-reports-folder",
+        "reportFilename": "my-report",
+        "overwrite": false
+      },
+      "version": "6.2.0"
+    }
+  }
+}

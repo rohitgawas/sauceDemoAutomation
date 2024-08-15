@@ -1,0 +1,25 @@
+{
+  "checkOutButton": "#checkout",
+  "finishButton": "#finish",
+  "completeHeader": "[data-test='complete-header']",
+  "cancelButton": "#cancel",
+  "addToCartButtonForEachProduct": {
+    "Sauce_Labs_Backpack": "#add-to-cart-sauce-labs-backpack",
+    "Sauce_Labs_Bolt_Tshirt": "#add-to-cart-sauce-labs-bolt-t-shirt",
+    "Sauce_labs_Fleece_Jacket": "#add-to-cart-sauce-labs-fleece-jacket"
+  },
+  "checkProductsInCart": {
+    "SauceLabsBackpack": {
+      "name": "Sauce Labs Backpack",
+      "price": "$29.99"
+    },
+    "SauceLabsFleeceJacket": {
+      "name": "Sauce Labs Fleece Jacket",
+      "price": "$49.99"
+    },
+    "SauceLabsBoltTShirt": {
+      "name": "Sauce Labs Bolt T-Shirt",
+      "price": "$15.99"
+    }
+  }
+}

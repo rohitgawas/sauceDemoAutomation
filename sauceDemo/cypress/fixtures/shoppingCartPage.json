@@ -1,0 +1,39 @@
+{
+  "shoppingCartContainer": "#shopping_cart_container",
+  "burgerMenu": "#react-burger-menu-btn",
+  "shoppingCartPagePageHeaderText": "Swag Labs",
+  "shoppingCartPageTitle": "[data-test='title']",
+  "cartQuantityLabel": "[data-test='cart-quantity-label']",
+  "cartDescriptionLabel": "[data-test='cart-desc-label']",
+  "continueShoppingButton": "#continue-shopping",
+  "checkOutButton": "#checkout",
+  "productsListInCart": "[data-test='inventory-item']",
+  "socialMediaLinks": {
+    "twitter": "[data-test='social-twitter']",
+    "faceBook": "[data-test='social-facebook']",
+    "linkedIn": "[data-test='social-linkedin']"
+  },
+  "addToCartButtonForEachProduct": {
+    "Sauce_Labs_Backpack": "#add-to-cart-sauce-labs-backpack",
+    "Sauce_Labs_Bolt_Tshirt": "#add-to-cart-sauce-labs-bolt-t-shirt",
+    "Sauce_labs_Fleece_Jacket": "#add-to-cart-sauce-labs-fleece-jacket"
+  },
+
+  "checkProductsInCart": {
+    "SauceLabsBackpack": {
+      "name": "Sauce Labs Backpack",
+      "price": "$29.99"
+    },
+    "SauceLabsFleeceJacket": {
+      "name": "Sauce Labs Fleece Jacket",
+      "price": "$49.99"
+    },
+    "SauceLabsBoltTShirt": {
+      "name": "Sauce Labs Bolt T-Shirt",
+      "price": "$15.99"
+    }
+  },
+  "removeButton": {
+    "forSauceLabsFleeceJacket": "#remove-sauce-labs-fleece-jacket"
+  }
+}

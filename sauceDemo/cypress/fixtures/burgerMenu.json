@@ -1,0 +1,8 @@
+{
+  "burgerMenu": "#react-burger-menu-btn",
+  "allItemsLink": "[data-test='inventory-sidebar-link']",
+  "aboutLink": "[data-test='about-sidebar-link']",
+  "logOutLink": "#logout_sidebar_link",
+  "resetAllState": "#reset_sidebar_link",
+  "productPageTitle": "[data-test='title']"
+}

@@ -1,0 +1,33 @@
+{
+  "shoppingCartContainer": "#shopping_cart_container",
+  "productSortButton": "[data-test='product-sort-container']",
+  "burgerMenu": "#react-burger-menu-btn",
+  "invenory_item_cards": "[data-test='inventory-item']",
+  "inventory_item_price": "[data-test='inventory-item-price']",
+  "productPageHeaderText": "Swag Labs",
+  "addToCartButtons": ".btn_inventory",
+  "productImage": "img.inventory_item_img",
+  "productPageTitle": "[data-test='title']",
+  "shoppingCartBadge": "[data-test='shopping-cart-badge']",
+  "socialMediaLinks": {
+    "twitter": "[data-test='social-twitter']",
+    "faceBook": "[data-test='social-facebook']",
+    "linkedIn": "[data-test='social-linkedin']"
+  },
+  "addToCartButtonForEachProduct": {
+    "Sauce_Labs_Backpack": "#add-to-cart-sauce-labs-backpack",
+    "Sauce_Labs_Bike_Light": "#add-to-cart-sauce-labs-bike-light",
+    "Sauce_Labs_Bolt_Tshirt": "#add-to-cart-sauce-labs-bolt-t-shirt",
+    "Sauce_labs_Fleece_Jacket": "#add-to-cart-sauce-labs-fleece-jacket",
+    "Sauce_Labs_Onesie": "#add-to-cart-sauce-labs-onesie",
+    "Test_AllTheThings_Tshirt_red": "#add-to-cart-test.allthethings()-t-shirt-(red)"
+  },
+  "addToCartChangedToRemove": {
+    "Sauce_Labs_Backpack": "#remove-sauce-labs-backpack",
+    "Sauce_Labs_Bike_Light": "#remove-sauce-labs-bike-light",
+    "Sauce_Labs_Bolt_Tshirt": "#remove-sauce-labs-bolt-t-shirt",
+    "Sauce_labs_Fleece_Jacket": "#remove-sauce-labs-fleece-jacket",
+    "Sauce_Labs_Onesie": "#remove-sauce-labs-onesie",
+    "Test_AllTheThings_Tshirt_red": "#remove-test.allthethings()-t-shirt-(red)"
+  }
+}
