@@ -203,7 +203,7 @@ As we have verifyBurgerMenu.js test suite includes one failing test , after runn
 To demonstrate this , I have provided two build runs :
 
 ### Build with Passed state : In this I have disabled the failing test to get passed build
-### Build with Failed state : I this failing test is enabled and running.
+### Build with Failed state : In this the failing test is enabled and running.
 
 
 
