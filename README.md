@@ -1,1 +1,1 @@
-# Navigate to sauceDemo folder and refer README.ms for documentation
+# Navigate to sauceDemo folder and refer README.md for documentation
